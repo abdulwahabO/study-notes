@@ -5,7 +5,7 @@ Java uses a combination of compilation and interpretation. Java code is first co
 
 The JVM creates an isolated space on a the RAM of a host machine and uses this space to execute programs compiled to bytecode from any JVM language on any system. This is unlike languages such as C++ where code is compiled to platform specific instructions.
 
-The JVM broadly consists of: A class loader subsytem, a runtime data area, and an execution area.
+The JVM broadly consists of: A class loader subsystem, a runtime data area, and an execution area.
 
 ## The Class Loader Subsystem
 
