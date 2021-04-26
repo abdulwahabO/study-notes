@@ -94,7 +94,6 @@ SELECT AVG(price) as price_avg, product_name FROM products GROUP BY product_name
 TODO: Practice grouping and applying aggregate functions on a real DB.
 TODO: Learn about stored procedures and views.
 
-
 ## SQL Practice: Prognoreport DB query problems.
 
 1. Show how many sales each company has made in Naira.
