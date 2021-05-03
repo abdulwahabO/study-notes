@@ -1,4 +1,4 @@
-## Blockchain Defined
+# Blockchain Overview
 
 A blockchain is an autonomous decentralized application technology which was originally created to support Bitcoin, a digital currency system. It has since evolved on it's own to support other use cases. 
 
