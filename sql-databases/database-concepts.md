@@ -49,9 +49,7 @@ Indexing is not advisable if the table is constantly been written to. This is be
 
 **Clustered Indexes:** A clustered index will cause a table to be sorted in the same order as the index. There can be only one clustered index per table. Some database engines automatically create a clustered index using the table's primary key column. A clustered index uses the leaf nodes of a B-tree for storage of the data pages. For a table without a clustered index, data is stored in a heap, a data structure without order.
 
-
 **Non-clustered Indexes:** These have a structure separate from the table data. A table can have more than one non-clustered index. These kind of indexes helps improve performance of queries involving columns which are not the primary key. This index stores a pointer to the location of the data and doesn't store data pages in the index.
-
 
 #### References
 

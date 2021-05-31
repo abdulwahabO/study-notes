@@ -14,4 +14,17 @@ The design of smart contracts should be simple, coherent and auditable.
 
 The blockchain is NOT a data repository. Instead of keeping huge amounts of data on-chain, it's better to keep the data off-chain and store metadata on-chain. E.g., Instead of sending the entire contents of a legal documents in a transaction, the document can be hashed and the hash value kept on chain while the original text is kept elsewhere.
 
+Smart contracts can access info(like number and timestamp) about the block into which the current transaction will be added. 
 
+### Storage, Memory and the Stack
+
+Every smart contract has three areas where it can store data. 
+
+1. **Storage:** A key-value store that maps 256-bit keys to 256-bit values. Costly to read and to modify. 
+
+2. **Memory::** A new instance is created for every message call. A message call occurs when one smart contract calls another, or sends Ether to non-contract account. Memory is a linear data structure. The cost of reading from memory increases as it grows. 
+
+3. **Stack:** Since the EVM is a stack machine. All EVM computations are performed here. 
+
+
+See [Introduction to Smart Contracts](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html)
