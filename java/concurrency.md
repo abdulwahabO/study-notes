@@ -53,7 +53,6 @@ Most `Executor` implementations use _thread pools_ which are a collection of res
 This approach minimizes the overhead incurred from creating and destroying new thread objects.
 
 
-
 #### References
 
 * [Java Lanaguage Tutorials | Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html)

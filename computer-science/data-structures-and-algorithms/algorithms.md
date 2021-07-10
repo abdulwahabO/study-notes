@@ -1,6 +1,6 @@
 ## Algorithms
 
-_Asymptotic analysis_ is used to evaluate how much more time/space an algorithm will need as its input size grows. This analysis is independent of the programming language used, the CPU power, and other hardware factors.
+_Asymptotic analysis_ is used to evaluate how much more time/space an algorithm will need as its input size grows. This analysis is independent of the programming language used, the CPU power, and other hardware factors. It focus on the number of steps an algorithm takes, instead of the actual running time.
 
 `Time complexity` is a way of computing the running time of an algorithm by considering specific input that leads to the maximum number of possible primitive operations been executed. This can be expressed as a polynomial.
 

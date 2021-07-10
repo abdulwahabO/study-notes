@@ -14,4 +14,3 @@ An Ethereum node provides two categories of APIs that Dapps can call:
 Dapps rely on client libraries written in different languages to make this calls.
 
 
-
