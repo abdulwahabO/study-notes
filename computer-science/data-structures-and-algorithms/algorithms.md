@@ -39,3 +39,4 @@ Big-O is a notation for representing the time complexity of an algorithm in the 
 * Loop multiplies/divide the loop varible (reducing the number of iterations) = `O(log n)`
 
 
+_TODO: Learn common sorting and searching algorithms with their time complexities_
