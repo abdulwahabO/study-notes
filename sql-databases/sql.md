@@ -79,7 +79,6 @@ If no records from the left table match, then the result set consists of the rec
 
 * A `FULL JOIN` returns all records where there is a match in either table.
 
-
 ## Aggregate Functions.
 
 * Aggregate functions operate on a set of values and are often used with the `GROUP BY` clause.
@@ -92,7 +91,8 @@ The most common aggregate functions are `AVG(..)` which returns the average valu
 SELECT AVG(price) as price_avg, product_name FROM products GROUP BY product_name;
 ```
 TODO: Practice grouping and applying aggregate functions on a real DB.
-TODO: Learn about stored procedures and views.
+
+TODO: Learn about stored procedures, triggers, EXPLAIN and views.
 
 ## SQL Practice: Prognoreport DB query problems.
 

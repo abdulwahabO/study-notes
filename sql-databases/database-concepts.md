@@ -39,7 +39,12 @@ A database transaction is a group of read/write operations which are treated as 
 
 Transactions ensure that data is left in a consistent state in the event of a failure, and provide isolation between the different processes that may attempt to access the database concurrently.
 
-`TODO: Add more details.....`
+**ACID properties** of transactions describe the features of a good relational database transaction. These are:
+
+- _Atomicity:_ 
+- _Consistency:_
+- _Isolation:_
+- _Durability:_
 
 # 3. Indexes
 

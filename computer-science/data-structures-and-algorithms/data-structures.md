@@ -87,7 +87,7 @@ A hash table, or hash map or associative array, is a data structure in which key
 If the time complexity of the hash function is ignored, insert, search and delete operations for a hash table operations run in constant time(`O(1)`).
 
 A `hash function` is an algorithm that converts a key to a hash value between 0 - N(where N is the size of the array). A good hash function:
-* Always produces the same value for a given key.
+* Is deterministic: Always produces the same value for a given key.
 * Provides a uniform distribution of hash values. I.e., every value has an equal probability of been generated.
 * Minimises the rate of collisions.
 
