@@ -19,7 +19,7 @@ Kafka is built aroun the concept of a _commit log_(also known as write-ahead log
 
 - A single Kafka server is called a **broker**. Several brokers form a **cluster**. A broker known as the **controller** is elected from the live members of the cluster and is responsible for admin tasks like assigning partitions and monitoring cluster members for failure.
 
-- A partition can be replicated across several brokers. This creates redundancy and ensures that partitions are available for read/write even if one the brokers goes downs. 
+- A partition can be replicated across several brokers. This creates redundancy and ensures that partitions are available for read/write even if one the brokers goes downs. A partition can have a **leader replica**. I.e., a broker that handles read/write request for that partition.A **follower replica** is broker that does not handle any requests from producers or consumers for that partition but is up-to-date with it's messages. 
 
 - A **producer** creates a message and writes it to Kafka broker. Producers can specify a message key or use a custom partitioner to determine which partition the message goes to.
 
@@ -29,5 +29,6 @@ One of the consumers in a group acts as **group coordinator**.
 - The group coordinator monitors heartbeats from other group members and triggers a **partition rebalance** when a member goes offline. Consumer groups are independent of each other. **Consumers** commit the **offsets** of the partitions they are reading so that if they went offline and another consumer can take over the partition and continue from where they stopped. Offset commit can be automatic or manual depending on configuration. 
 
 - A partition rebalance is the process of changing ownership of a topic's partition. This happens when a consumer goes offline or new partition is added to the topic. Consumers can listen for rebalances and execute some logic before or after. 
+
 
 **_TODO: Learn more about how each of these concepts work._**
