@@ -59,4 +59,4 @@ Using a cluster of servers to handle client requests reduces latency, increases 
     - Server clusters.
     - Etc.
 
-READ MORE. Study sample designs. [SYSTEMS DESIGN](https://github.com/donnemartin/system-design-primer#how-to-approach-a-system-design-interview-question)
+IMPORTANT: Study sample designs: [SYSTEMS DESIGN](https://github.com/donnemartin/system-design-primer#how-to-approach-a-system-design-interview-question)
