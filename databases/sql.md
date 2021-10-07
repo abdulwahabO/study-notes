@@ -90,9 +90,10 @@ The most common aggregate functions are `AVG(..)` which returns the average valu
 ```sql
 SELECT AVG(price) as price_avg, product_name FROM products GROUP BY product_name;
 ```
-TODO: Practice grouping and applying aggregate functions on a real DB.
 
-TODO: Learn about stored procedures, triggers, EXPLAIN and views.
+_TODO: Practice grouping and applying aggregate functions on a real DB._
+
+_TODO: Learn about stored procedures, triggers, EXPLAIN and views._
 
 ## SQL Practice: Prognoreport DB query problems.
 

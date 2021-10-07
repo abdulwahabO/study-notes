@@ -134,3 +134,5 @@ _TODO: Read about `this` keyword in JS. And about object prototypes_
 
 
 
+_TODO: study Promises and Async/Await_
+
