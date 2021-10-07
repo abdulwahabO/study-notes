@@ -44,33 +44,18 @@
 
 ## Data Management: Transactions 
 
-TODO: start from transaction questions of section 3.
+A database transaction is a sequence of actions that are treated as a single unit of work. If any of the individual actions fail, the effects of the previous successful actions are undone(rollback).
 
+There are two ways to implement transaction management:
+1. Programmatic: Involves writing extra code
+2. Declarative: Use of the @Transactional annotation at class level or on public methods of a classes.
 
-## Spring Data JPA  
+- Spring creates proxies for classes where the @Transactional annotation is present. This allows for logic to be inserted before and after the method is executed.
 
+- By default there is no rollback for checked exceptions. This default rollback policy can be overriden using the `rollbackFor` attributes of @Transactional
 
+- Transaction propagation type determines how a method will behave if it is called by another component that has an existing transaction. The default propagation type is REQUIRED, this means the method must always execute as part of a transaction. It either joins a existing transaction or creates one. others include:
+    - REQUIRES_NEW : always creates a new one.
+    - SUPPORTS : Join a trxn if there is one.
 
-
-## Spring MVC Basics 
-
-
-Section 1-6 – Spring MVC REST 
-
-
-Section 1-7 – Security 
-
-Section 1-8 – Testing 
-
-
-
-Section 1-9 – Spring Boot Basics 
-
-
-Section 1-10 – Spring Boot Auto Configuration 
-
-
-Section 1-11 – Spring Boot Actuator 
-
-
-Section 1-12 – Spring Boot Testing
+- When a transactional method is called by another method(transactional or not) in same class the @Transactional annotation has no effect and the method executes normally. The AOP proxy is only active the class is used from another instance.

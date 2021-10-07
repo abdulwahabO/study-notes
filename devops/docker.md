@@ -6,9 +6,10 @@ Containers are created from _images_. A Docker image is a template that describe
 
 
 
-_TODO: Learn Docker here: https://www.freecodecamp.org/news/the-docker-handbook/_
+Just read this overview: https://docs.docker.com/get-started/overview/
 
 
+Volumes: share data between host and container
 
 
 _TODO: Read about CI/CD_
