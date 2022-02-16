@@ -1,8 +1,7 @@
 ## CI/CD concepts
 
-
+-- difference?
 
 ## Jenkins 
 
-use linkedIn course
 

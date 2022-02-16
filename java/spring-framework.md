@@ -59,3 +59,5 @@ There are two ways to implement transaction management:
     - SUPPORTS : Join a trxn if there is one.
 
 - When a transactional method is called by another method(transactional or not) in same class the @Transactional annotation has no effect and the method executes normally. The AOP proxy is only active the class is used from another instance.
+
+_TODO: Look at cert guide and finish this: https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/certification/vmw-spring-professional-certification-study-guide.pdf_

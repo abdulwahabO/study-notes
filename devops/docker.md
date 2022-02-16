@@ -11,5 +11,3 @@ Just read this overview: https://docs.docker.com/get-started/overview/
 
 Volumes: share data between host and container
 
-
-_TODO: Read about CI/CD_

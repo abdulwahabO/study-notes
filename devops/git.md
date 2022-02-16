@@ -1,1 +1,0 @@
-### Use Atlassian docs to get the fundamentals of Git.
