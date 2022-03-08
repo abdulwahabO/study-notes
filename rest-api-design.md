@@ -23,3 +23,12 @@ The constraints defined by REST are:
 
 _TODO: Read REST API Design Rulebook_ 
 
+## HTTP Headers
+
+`Content-Type`: Tells client/server the format of the response/request body. The value of this header is known as media type. It's format is `type/subtype; [paramKey=paramValue]`E.g., `application/json`, `text/html; charset=utf8`. Vendor-specific media types convey a message to programs that understand them. Theyhave their subtypes beginning with `vnd.`. E.g. `application/vnd.ms-excel`
+
+`Content-Length`: Tells client/server the size(in bytes) of the response/request boy. This is important in responses because the client can compare this to the actual size of the data in the body to determine that the correct number of bytes were downloaded.
+
+`Last-Modified`: This is used in responses to tell clients the last time a resource was modified. 
+
+`Cache-Control`: This is used in responses to encourage or discourage caching. It can include a TTL value(in seconds) or a `no-cache` instruction.

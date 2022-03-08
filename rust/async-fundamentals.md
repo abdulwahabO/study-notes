@@ -16,4 +16,26 @@ Programming languages support different concurrent programming models. These inc
 
 - *Actor model:* TODO??
 
-## 
+## Async/Await
+
+`async/.await` is the Rust langauge feature for writing asynchronous code with the look and feel of synchronous code. 
+
+`async` makes a function return an implementation of the `Future` trait. Calling a blocking function in a synchronous operation would cause the whole thread to be blocked, but a `Future` would yield control of the thread, and allow other `Future`s to run. 
+
+```rust
+async pub process_something() -> i32 {
+    // This returns a Future that has to be run on an executor.
+    // TODO: What happens if a `Future` is used in synchronous Rust?
+}
+```
+
+`.await` is used inside an `async` function to wait for the completion of another. This doesn't block the thread, instead it is freed up for the executor to run another `Future`.
+
+```rust
+async pub do_another_thing() {
+    // Once .await is called, the thread is yielded for other Futures to use.
+    let x = process_something().await;
+}
+```
+
+`Future`s have to be run on an executor, otherwise nothing happens(??).
